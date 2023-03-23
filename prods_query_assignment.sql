@@ -1,4 +1,4 @@
--- 1.	Display the ids and names for all customers.
+-- 1.	Display the ids and names for all customers. ok
 
 SELECT cust_id, cust_name FROM customer;
 
@@ -68,7 +68,7 @@ SELECT MIN(cust_balance) AS min_customer_balance FROM customer;
 
 -- 18.	Display the id, the name, and the balance of the customer with the largest balance. 
 
-SELECT MAX(cust_balance), cust_id, cust_name FROM customer GROUP BY cust_balance; --couldnt figure it out
+SELECT cust_id, cust_name, cust_balance FROM customer WHERE cust_balance = ( SELECT MAX(cust_balance) FROM customer);
 
 -- 19.	Display the sales representative’s id and the sum of the balances of all customers represented by each of these sales representatives. Group and order the display by the sales representative ids.
 
