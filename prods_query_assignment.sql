@@ -1,4 +1,4 @@
--- 1.	Display the ids and names for all customers. ok
+-- 1.	Display the ids and names for all customers.
 
 SELECT cust_id, cust_name FROM customer;
 
